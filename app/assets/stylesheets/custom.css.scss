@@ -1,5 +1,18 @@
 @import 'bootstrap/dist/css/bootstrap';
 
 .navbar-brand {
-    font-size: 2rem;
+    font-size: 1.5rem;
+}
+.search-input{
+    padding-top:3rem;
+    padding-bottom:3rem;
+}
+.no_pr{
+    padding-right: 0 !important;
+}
+.no_pl{
+    padding-left: 0 !important;
+}
+.search-results{
+    display:inline-block;
 }

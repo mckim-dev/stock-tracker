@@ -1,0 +1,21 @@
+<h1 class="display-4">My Portfolio</h1>
+
+<div class='search-input'>
+  <h3 text-info>Search Stocks</h3>
+  <%= form_tag search_stock_path, remote: true, method: :get do %>
+  <div class="form-group row">
+    <div class="input-group mb-2 col-sm-9">
+    <div class="input-group-prepend">
+        <%= button_tag type: :submit, class: "btn btn-info" do %>
+          <%= fa_icon 'search 2x' %>
+        <% end %>
+      </div>
+      <%= text_field_tag :stock, params[:stock], placeholder: "Stock Ticker Symbol", autofocus: true, class: "form-control form-control-lg", id: "inlineFormInputGroup" %>
+    </div>
+  </div>
+  <% end %>
+</div>
+<div id="results">
+</div>
+
+
